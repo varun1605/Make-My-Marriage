@@ -3,8 +3,9 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Make My Marriage",
-  description: "A shared space for your wedding.",
+  title: "Make My Marriage — Your wedding. Beautifully organized.",
+  description:
+    "One shared space for your Indian wedding. Bring family, events, tasks, guests, expenses, and memories together with Make My Marriage.",
 };
 
 export default function RootLayout({

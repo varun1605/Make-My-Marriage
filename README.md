@@ -1,8 +1,26 @@
 # Make My Marriage
 
-Minimal Next.js App Router + TypeScript starting point for the V1 modular monolith.
-The only application page is a placeholder at `/`. Product workflows and REST
-endpoints will be added in bounded increments.
+Next.js App Router + TypeScript foundation for the V1 modular monolith.
+The public homepage at `/` follows the reviewed Stitch design, with content
+aligned to the frozen V1 scope. Product workflows and REST endpoints will be
+added in bounded increments.
+
+## Homepage
+
+The homepage introduces events, tasks, guests, invitations, recorded expenses,
+vendors, wedding websites, YouTube livestreams, and private photo sharing.
+Cards contain illustrative sample data, not live wedding records. Expense
+visuals show spending categories, not budget allocations or payment schedules.
+
+Section links and the responsive mobile menu work locally. Create-wedding and
+login buttons open a dismissible coming-soon dialog; they do not create accounts,
+authenticate, collect details, or navigate to unimplemented routes. Authentication
+and dashboard screens remain separate increments. The public page contains no
+private wedding data or backend/provider imports.
+
+The page uses plain CSS, shared colour tokens, and locally served EB Garamond and
+Manrope fonts. Images use Next.js image optimisation. See
+[public/ASSETS.md](public/ASSETS.md) for asset sources and font licences.
 
 ## Run locally
 
@@ -15,7 +33,7 @@ npm run dev
 ```
 
 Open http://localhost:3000. No environment file, database, provider credentials,
-or external-service connection is required for the empty app.
+or external-service connection is required to run the homepage.
 
 `next.config.ts` disables automatic `AGENTS.md` generation so starting the
 development server preserves the separate project-rules approval workflow.
@@ -67,7 +85,8 @@ See [Next.js server/client boundaries](https://nextjs.org/docs/app/getting-start
 - Strict TypeScript and the `@/*` alias for `src/*`.
 - ESLint using the official Next.js plugin's Core Web Vitals rules, JavaScript
   recommended rules, and TypeScript recommended rules.
-- Plain CSS and local system fonts; no remote font fetching during builds.
+- Plain CSS; the homepage adds locally served fonts with system fallbacks.
+  No remote font fetching occurs during builds.
 
 The setup follows the [Next.js installation guide](https://nextjs.org/docs/app/getting-started/installation)
 and [ESLint guide](https://nextjs.org/docs/app/api-reference/config/eslint).
@@ -123,7 +142,12 @@ its parameters are agreed. `AGENTS.md` content still requires separate approval.
 | `tsconfig.json` | Strict TypeScript, Next.js plugin, source alias |
 | `eslint.config.mjs` | Next.js and TypeScript lint configuration |
 | `next.config.ts` | Disables automatic agent-rules file generation during development |
-| `src/app/layout.tsx`, `src/app/page.tsx`, `src/app/globals.css` | Minimal accessible page, layout, metadata, and styling |
+| `src/app/layout.tsx`, `src/app/page.tsx`, `src/app/globals.css` | Homepage content, layout, metadata, fonts, and shared design tokens |
+| `src/components/home/site-header.tsx` | Responsive navigation and mobile menu |
+| `src/components/home/access-button.tsx` | Accessible coming-soon dialog for deferred account access |
+| `src/components/home/home.module.css` | Scoped homepage styling and responsive layouts |
+| `src/components/icon.tsx` | Shared inline SVG presentation icons |
+| `public/images/*`, `public/fonts/*`, `public/ASSETS.md` | Local Stitch imagery, fonts, licences, and provenance |
 | `README.md` | Setup, checks, dependency rationale, and scope |
 | `src/app/api/README.md` | REST handler placement and responsibilities |
 | `src/modules/README.md` | Domain ownership and server/client conventions |
