@@ -45,7 +45,7 @@ export default function HomePage() {
               <AccessButton className={styles.primaryButton}>Create your wedding <Icon name="arrow" /></AccessButton>
               <a href="#how-it-works" className={styles.secondaryButton}>See how it works <Icon name="chevron" /></a>
             </div>
-            <p className={styles.launchNote}>A new beginning is coming soon.</p>
+            <p className={styles.launchNote}>Create your account today. Wedding planning tools are coming next.</p>
           </div>
           <div className={styles.heroVisual}>
             <div className={styles.heroImageFrame}>
@@ -140,7 +140,7 @@ export default function HomePage() {
 
         <section className={styles.promise} aria-label="Our promise"><Icon name="flower" /><p className={styles.microLabel}>At the heart of it all</p><h2>One celebration. Hundreds of details.<br />One place to bring it all together.</h2><p>Made for the families who make a wedding.</p></section>
 
-        <section className={`${styles.container} ${styles.finalCta}`} aria-labelledby="begin-title"><p className={styles.eyebrow}>Your story starts here</p><h2 id="begin-title">Begin planning something<br />unforgettable.</h2><p className={styles.sectionDescription}>A little less coordination. A little more celebration.<br />A beautiful space for the people who matter most.</p><div className={styles.heroActions}><AccessButton className={styles.primaryButton}>Create your wedding <Icon name="heart" /></AccessButton><AccessButton className={styles.secondaryButton} intent="login">Log in to your wedding <Icon name="arrow" /></AccessButton></div><p className={styles.launchNote}>Coming soon · Built around your family</p></section>
+        <section className={`${styles.container} ${styles.finalCta}`} aria-labelledby="begin-title"><p className={styles.eyebrow}>Your story starts here</p><h2 id="begin-title">Begin planning something<br />unforgettable.</h2><p className={styles.sectionDescription}>A little less coordination. A little more celebration.<br />A beautiful space for the people who matter most.</p><div className={styles.heroActions}><AccessButton className={styles.primaryButton}>Create your wedding <Icon name="heart" /></AccessButton><AccessButton className={styles.secondaryButton} intent="login">Log in to your wedding <Icon name="arrow" /></AccessButton></div><p className={styles.launchNote}>Start with your account · Built around your family</p></section>
       </main>
       <footer className={styles.footer}><div className={styles.container}><div className={styles.footerTop}><a href="#main-content" className={styles.footerBrand}>Make My Marriage<span>Beautifully organized. Lovingly shared.</span></a><nav aria-label="Footer"><a href="#features">Features</a><a href="#how-it-works">How it works</a><a href="#wedding-website">Wedding website</a><a href="#memories">Memories</a></nav></div><div className={styles.footerBottom}><span>© {new Date().getFullYear()} Make My Marriage</span><span>Made for many celebrations. And one beautiful beginning.</span></div></div></footer>
     </>

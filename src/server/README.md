@@ -1,6 +1,6 @@
 # Server infrastructure
 
-Reserved directories:
+Infrastructure ownership:
 
 - `auth`: password, token, session, and cookie mechanisms.
 - `authorization`: trusted membership, role, and tenant context.
@@ -11,8 +11,9 @@ Reserved directories:
 - `vendors`: Google Places adapter.
 - `config`: server environment configuration.
 
-Future runtime modules here must begin with `import "server-only";` so Next.js
-rejects imports into client bundles. This scaffold contains no server runtime
-modules or secrets; these directories alone do not enforce an import boundary.
-Provider integrations and environment validation are deferred to their first
-feature. Do not initialize clients or require production credentials just to boot.
+Runtime modules here must begin with `import "server-only";` so Next.js rejects
+imports into client bundles. Authentication now includes Argon2id, HMAC sessions,
+MongoDB rate counters, lazy environment validation, a reused database connection,
+and safe request/error helpers. See `docs/AUTH_IMPLEMENTATION.md` for setup.
+Provider adapters and general wedding authorization remain deferred. Do not
+initialize clients or require production credentials just to render public pages.

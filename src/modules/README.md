@@ -12,4 +12,6 @@ persistence must not invent collections. `photos` owns the Gallery domain.
 Future server-only services, repositories, and models must begin with
 `import "server-only";`. Do not export them through a barrel shared with browser
 components. Keep browser-safe types and validation separate from server imports.
-No domain behaviour is implemented yet.
+`auth` now implements signup, login, current-user lookup and logout. Wedding and
+Wedding Members expose read-only projections for authentication responses; their
+models and write workflows remain deferred. Other domains remain reserved.

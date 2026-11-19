@@ -4,6 +4,15 @@ This document records the reviewed project structure and implementation sequence
 It is a planning document, not an executable application scaffold. Unresolved
 choices are marked **Needs implementation decision** and remain open.
 
+> **Status update — 2026-10-22:** This plan preserves the pre-scaffold assessment
+> and historical approval steps. The approved scaffold and public homepage now
+> exist. The user has explicitly requested creation of `AGENTS.md` and a maintained
+> context file, superseding this plan's earlier instruction to leave agent rules
+> pending separate approval. Read [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md) for
+> current progress and resolved tooling choices, [AGENTS.md](AGENTS.md) for working
+> rules, and [README.md](README.md) for executable setup. Open feature decisions
+> remain open unless a later recorded decision explicitly resolves them.
+
 ## 1. Authoritative specifications
 
 | Document | Controls |

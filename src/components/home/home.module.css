@@ -216,16 +216,6 @@
 .footer nav { display: flex; gap: 25px; font-size: 11px; }
 .footer nav a { padding-block: 12px; }
 .footerBottom { display: flex; justify-content: space-between; gap: 24px; margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; line-height: 1.8; }
-.accessDialog { color: var(--ink); background: var(--paper); border: 1px solid var(--gold); border-radius: 18px; padding: 0; width: min(520px, calc(100% - 32px)); max-height: calc(100dvh - 48px); box-shadow: 0 24px 64px #211f2030; }
-.accessDialog::backdrop { background: #211f2070; backdrop-filter: blur(4px); }
-.dialogContent { position: relative; text-align: center; padding: 52px 35px 38px; }
-.dialogClose { position: absolute; top: 10px; right: 10px; width: 44px; height: 44px; display: grid; place-items: center; background: transparent; border: 0; border-radius: 50%; }
-.dialogClose:hover { background: #f1e9de; }
-.dialogIcon { display: grid; place-items: center; width: 54px; height: 54px; border-radius: 50%; background: #eee3d4; color: var(--gold-ink); margin: 0 auto 22px; }
-.dialogIcon svg { width: 28px; height: 28px; }
-.dialogContent h2 { color: var(--wine); font: 400 37px/1.12 var(--serif); margin: 15px 0 18px; letter-spacing: -0.025em; }
-.dialogContent > p:not(.eyebrow) { font-size: 13px; line-height: 1.9; color: var(--muted); }
-.dialogContent > .primaryButton { margin-top: 26px; }
 .srOnly { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
 @media (min-width: 1550px) {
@@ -391,6 +381,4 @@
   .browserDots i { width: 4px; height: 4px; }
   .websiteWindow { padding: 14px; }
   .websiteFoot { font-size: 8px; }
-  .dialogContent { padding-inline: 23px; }
-  .dialogContent h2 { font-size: 32px; }
 }

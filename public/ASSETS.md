@@ -34,3 +34,11 @@ hero has an architectural arch. Shared values live in `src/app/globals.css`.
 Stitch supplies the visual reference. The frozen specifications control the
 feature claims and examples: no budgeting, vendor payments, automated WhatsApp,
 travel coordination, or RAW/video gallery uploads are advertised.
+
+## Authentication screens
+
+The signup/login layout follows the same Luxury Login screen
+(`7936836ce22d4aa4bc3dcdd81d81c946`), retrieved and inspected on 2026-10-23.
+It reuses the local palace image and fonts. Behaviour follows the frozen
+email/password contracts and approved session settings, not the reference
+image’s OTP/digital-pass controls or 30-day remember-device option.

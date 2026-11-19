@@ -1,0 +1,76 @@
+.shell { min-height: 100dvh; display: grid; grid-template-columns: 1fr 1fr; background: var(--ivory); }
+.story { padding: 42px 10% 28px; background: #f0eae2; border-right: 1px solid var(--line); display: flex; flex-direction: column; align-items: center; }
+.brand { align-self: flex-start; display: flex; flex-direction: column; gap: 8px; margin-bottom: 44px; }
+.brand > span { font: 500 24px/1 var(--serif); letter-spacing: 0.06em; text-transform: uppercase; color: var(--wine-dark); }
+.brand small { color: var(--gold-ink); text-transform: uppercase; letter-spacing: 0.2em; font-size: 9px; font-weight: 700; }
+.portrait { position: relative; width: 100%; max-width: 390px; aspect-ratio: 0.84; border-radius: 220px 220px 0 0; overflow: hidden; outline: 1px solid #cfb98f80; outline-offset: 9px; margin-top: 12px; }
+.portrait img { object-fit: cover; object-position: center; }
+.storyCaption { text-align: center; margin-top: 36px; }
+.storyCaption h2 { font: 400 clamp(30px, 3vw, 42px)/1.15 var(--serif); color: var(--wine-dark); }
+.storyCaption > span { display: block; width: 34px; height: 1px; background: var(--gold); margin: 20px auto; }
+.storyCaption p { color: var(--muted); font-size: 11px; line-height: 1.8; }
+.storyFoot { color: var(--muted); font-size: 9px; letter-spacing: 0.04em; padding-top: 35px; margin-top: auto; }
+.main { min-width: 0; padding: 35px 8% 25px; display: flex; flex-direction: column; }
+.topline { display: flex; justify-content: space-between; align-items: center; gap: 16px; color: var(--muted); font-size: 10px; }
+.topline > span { display: flex; align-items: center; gap: 6px; }
+.topline svg { color: var(--wine); width: 13px; }
+.backLink { min-height: 44px; display: inline-flex; align-items: center; }
+.backLink:hover { text-decoration: underline; }
+.mobileBrand { display: none; }
+.formWrap { width: 100%; max-width: 430px; margin: auto; padding-block: 55px; }
+.eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.16em; line-height: 1.8; color: var(--gold-ink); text-transform: uppercase; }
+.formWrap h1 { font: 400 clamp(38px, 4vw, 56px)/1.1 var(--serif); letter-spacing: -0.025em; color: var(--wine-dark); margin-top: 16px; }
+.intro { color: var(--muted); font-size: 13px; line-height: 1.8; margin-top: 18px; }
+.form { margin-top: 35px; }
+.form fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.field { margin-bottom: 24px; }
+.field label { display: block; font-size: 10px; line-height: 1.6; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; margin-bottom: 9px; }
+.field input { width: 100%; min-height: 52px; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 12px 15px; font-size: 16px; color: var(--ink); }
+.field input::placeholder { color: #7c7471; font-size: 13px; }
+.field input:focus-visible { outline: 2px solid var(--wine); outline-offset: 3px; }
+.field input[aria-invalid="true"] { border-color: #a02e34; }
+.passwordInput { position: relative; }
+.passwordInput input { padding-right: 70px; }
+.passwordInput button { position: absolute; right: 5px; top: 4px; bottom: 4px; min-width: 56px; border: 0; border-radius: 5px; background: transparent; color: var(--wine); font-size: 11px; font-weight: 600; }
+.hint { font-size: 11px; color: var(--muted); line-height: 1.7; margin-top: 9px; }
+.submit { width: 100%; display: flex; align-items: center; justify-content: center; gap: 16px; min-height: 52px; padding: 14px 20px; border: 1px solid var(--wine); border-radius: 8px; background: var(--wine); color: white; font-size: 13px; font-weight: 600; margin-top: 8px; }
+.submit svg { width: 17px; color: #e1cda5; }
+.submit:hover:not(:disabled) { background: var(--wine-dark); }
+.submit:disabled, .form fieldset:disabled { opacity: 0.65; }
+.submit:disabled { cursor: wait; }
+.sessionNote { display: flex; align-items: center; justify-content: center; gap: 7px; color: var(--muted); font-size: 10px; line-height: 1.7; margin-top: 16px; }
+.sessionNote svg { width: 13px; height: 13px; color: var(--gold-ink); }
+.switchLink { border-top: 1px solid var(--line); margin-top: 32px; padding-top: 26px; font-size: 12px; line-height: 1.9; text-align: center; color: var(--muted); }
+.switchLink a { color: var(--wine); font-weight: 700; margin-left: 5px; text-decoration: underline; text-underline-offset: 4px; }
+.releaseNote { margin-top: 23px; color: var(--muted); font-size: 10px; line-height: 1.8; text-align: center; }
+.errorSummary { color: #85212d; background: #f7e8e7; border: 1px solid #d9aaa9; border-radius: 8px; padding: 13px 15px; font-size: 12px; line-height: 1.8; margin-bottom: 24px; }
+.errorSummary:focus { outline: 2px solid var(--wine); outline-offset: 3px; }
+.fieldError { color: #85212d; font-size: 11px; line-height: 1.7; margin-top: 8px; }
+.footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: var(--muted); font-size: 9px; line-height: 1.8; }
+.accountCard { padding: 22px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); margin: 28px 0 24px; }
+.accountCard dt { font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.accountCard dd { margin: 7px 0 20px; font-size: 14px; overflow-wrap: anywhere; }
+.accountCard dd:last-child { margin-bottom: 0; }
+.accountIcon { width: 46px; height: 46px; border-radius: 50%; background: #e8ecdf; color: #4d583e; display: grid; place-items: center; margin-bottom: 22px; }
+@media (max-width: 1100px) {
+  .story { padding-inline: 9%; }
+  .main { padding-inline: 7%; }
+  .brand > span { font-size: 20px; }
+  .topline > span { display: none; }
+}
+@media (max-width: 760px) {
+  .shell { grid-template-columns: 1fr; }
+  .story { display: none; }
+  .main { padding: 15px 24px 24px; min-height: 100dvh; }
+  .topline > span { display: flex; }
+  .mobileBrand { display: block; color: var(--wine-dark); font: 500 25px var(--serif); text-align: center; margin-top: 22px; }
+  .formWrap { padding-block: 42px; }
+  .formWrap h1 { font-size: 43px; }
+  .footer { justify-content: center; }
+}
+@media (max-width: 380px) {
+  .main { padding-inline: 18px; }
+  .topline > span { display: none; }
+  .formWrap h1 { font-size: 38px; }
+  .sessionNote { font-size: 9px; }
+}
